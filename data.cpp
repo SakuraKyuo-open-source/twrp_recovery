@@ -772,6 +772,8 @@ void DataManager::SetDefaultValues()
 	mConst.SetValue("tw_no_flash_current_twrp", "0");
 #endif
 
+	mPersist.SetValue(TW_AUTO_DISABLE_AVB2_VAR, "0");
+
 	mData.SetValue(TW_ACTION_BUSY, "0");
 	mData.SetValue("tw_wipe_cache", "0");
 	mData.SetValue("tw_wipe_dalvik", "0");
