@@ -3874,7 +3874,7 @@
 				<listitem name="{@install_magisk=Install Magisk}">
 					<actions>
 						<action function="set">tw_back=advanced</action>
-						<action function="set">tw_customZipVerPath=/customzip/Magisk/MagiskVer</action>
+						<action function="set">tw_customZipVerPath=/customzip/Magisk/magiskVer</action>
 						<action function="set">tw_customZipPath=/customzip/Magisk/Magisk.apk</action>
 						<action function="preCustomFlashzip"/>
 						<action function="set">tw_action=customFlashzip</action>
@@ -3887,6 +3887,17 @@
 						<action function="set">tw_back=advanced</action>
 						<action function="set">tw_customZipVerPath=/customzip/other/permissiveVer</action>
 						<action function="set">tw_customZipPath=/customzip/other/Permissiver_GKI_64Bit.zip</action>
+						<action function="preCustomFlashzip"/>
+						<action function="set">tw_action=customFlashzip</action>
+						<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
+						<action function="page">confirm_action</action>
+					</actions>
+				</listitem>
+				<listitem name="{@install_boot_enforcing=Install Boot Enforcing GKI}">
+					<actions>
+						<action function="set">tw_back=advanced</action>
+						<action function="set">tw_customZipVerPath=/customzip/other/enforcingVer</action>
+						<action function="set">tw_customZipPath=/customzip/other/Enforcing_GKI_64Bit.zip</action>
 						<action function="preCustomFlashzip"/>
 						<action function="set">tw_action=customFlashzip</action>
 						<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
